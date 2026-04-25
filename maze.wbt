@@ -1,0 +1,111 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.576627225023803 0.5766272311496293 0.5787936416876573 2.092236291340083
+  position 0.017495049895478863 0.030278857878754527 1.7491218671558593
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Solid {
+  translation -0.37 0.15 0.1426425000006146
+  rotation -0.9770030174223397 -0.012739920802967614 -0.21284454037061284 9.011442903599816e-17
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.25 0.3
+      }
+    }
+  ]
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.1324299529905383 0.24224849569067142 0.1352850000000091
+  rotation 2.4065450735544663e-10 -1.0790674100347476e-10 1 6.856412985745183e-05
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.5 0.3
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.38 0.45 0.049607600000068794
+  rotation 0.9622377019444716 0.17453481277591504 -0.2088928052516372 2.09469414021832e-16
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.23 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+Solid {
+  translation -0.37 -0.37 0.1426425000006146
+  rotation -0.9590402331045021 -0.17884550478266187 -0.21967274911990584 7.93650433908896e-17
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.25 0.3
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+Solid {
+  translation 0.13 -0.37 0.1426425000006146
+  rotation -0.9590402331045021 -0.17884550478266187 -0.21967274911990584 7.93650433908896e-17
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.25 0.25 0.3
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject USE wall
+  physics Physics {
+  }
+}
+E-puck {
+  translation -0.387021 0.356142 -6.3962e-05
+  rotation 7.716713295115814e-06 -2.546200921832443e-08 0.999999999970226 0.0003166114402722718
+  controller "maze_solver"
+}
