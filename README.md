@@ -32,13 +32,6 @@ if front wall detected → turn right
 else if no left wall → turn left
 else → move forward
 
-## 🎥 Demo Video
-if front wall detected → turn right
-else if no left wall → turn left
-else → move forward
-
-text
-
 ### 📁 Project Files
 - `maze.wbt` - The maze world file
 - `maze_solver.py` - Python controller code
